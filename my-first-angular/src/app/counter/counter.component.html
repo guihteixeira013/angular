@@ -4,3 +4,9 @@
     <button (click)="increment()">+1</button>
     <button (click)="decrement()">-1</button>
 </div>
+
+<ul>
+    <li *ngFor="let item of ['Pamela','Guilherme','Maria','Marcos','Angela']">
+        Nome: {{ item }}
+    </li>
+</ul>
