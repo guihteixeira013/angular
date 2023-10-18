@@ -15,5 +15,13 @@ import { Component, Input } from '@angular/core';
 })
 
 export class HelloComponent {
+  // passando PROPRIEDADES para os componentes
+    // aqui se cria uma variá´vel padrão.
   @Input( ) name: string = 'Pamela';
+
+  // mapear EVENTOS
+    // aqui eu crio uma função para ser chamada posteriormente
+  clicked (): void {
+    window.alert('Ops, you clicked');
+  }
 }
