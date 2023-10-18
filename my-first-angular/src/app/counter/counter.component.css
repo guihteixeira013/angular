@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDF0D5;
+}
+
+h1 {
+    font-size: 50px;
+    position: relative;
+    left: -5px;
+}
+
