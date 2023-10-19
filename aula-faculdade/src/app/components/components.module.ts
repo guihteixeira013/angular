@@ -12,3 +12,5 @@ import { HeaderComponent } from "./header.component";
 export class ComponentModule {
 
 }
+// um MÓDULO é um componente REUTILIZADO
+// que pode ser importado ou exportado

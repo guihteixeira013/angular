@@ -11,7 +11,8 @@ import { ComponentModule } from './components/components.module';
   ],
   imports: [
     BrowserModule,
-    ComponentModule,
+    ComponentModule, // importando o módulo reutilizavel 
+                     // que contém componentes
     AppRoutingModule
   ],
   providers: [],
