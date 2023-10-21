@@ -1,2 +1,8 @@
-<h1>HELLO WORLD!</h1>
+<h1>HELLO {{titulo}}</h1>
 <a [routerLink]="['/client']">Ir para client</a>
+<br>
+
+
+<label for="">Mude o título: </label>
+<br>
+<input [(ngModel)]="titulo">

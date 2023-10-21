@@ -1,10 +1,12 @@
 import { NgModule } from "@angular/core";
 import { HeaderComponent } from "./header.component";
 import { RouterModule } from "@angular/router";
+import { FormsModule } from '@angular/forms';
 
 @NgModule ({
     imports: [
-        RouterModule
+        RouterModule,
+        FormsModule
     ],
     declarations: [
         HeaderComponent,

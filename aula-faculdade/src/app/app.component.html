@@ -1,2 +1,11 @@
 <h1>Aplicação</h1>
 <app-header></app-header>
+
+<ul>
+    <li>Item 1 - {{descricao1}}</li>
+    <li>Item 2 - {{descricao2}}</li>
+</ul>
+
+<label for="">Digite a descrição: </label>
+<br />
+<input [(ngModel)]="descricao1" />

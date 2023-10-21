@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentModule } from './components/components.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,9 +12,9 @@ import { ComponentModule } from './components/components.module';
   ],
   imports: [
     BrowserModule,
-    ComponentModule, // importando o módulo reutilizavel 
-                     // que contém componentes
-    AppRoutingModule
+    ComponentModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
