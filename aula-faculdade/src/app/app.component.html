@@ -2,12 +2,10 @@
 <app-header></app-header>
 
 <!-- Changing descricao1 value wid data bind TWO WAY -->
-<ul>
-    <li>Item 1 - {{descricao1}}</li>
+<ul *ngFor="let valor of valores">
+    <li>[ID {{valor.id}}] {{valor.nome}} - {{valor.descricao}} </li>
 </ul>
 
-<label for="">Nome: </label><br>
-<input [(ngModel)]="valor.nome" />
 
 <!-- IF clientePremim = true -->
 <div *ngIf="clientePremium; else naopremium">

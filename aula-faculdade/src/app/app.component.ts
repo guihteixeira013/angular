@@ -7,17 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aula-faculdade';
-  descricao1 = 'descrição do item 1'
+  descricao1 = 'descrição do item 1';
 
-  valor: {
-    descricao: string,
-    nome: string,
-    id: number
-  } = {
-    descricao: 'teste',
-    nome: 'nome',
+  valores = [{
+    nome: 'Guilherme',
+    descricao: 'Programador',
     id: 1
+  },{
+    nome: 'Pamela',
+    descricao: 'Programadora',
+    id: 2
+  },{
+    nome: 'Angela',
+    descricao: 'Aposentada',
+    id: 3
   }
+]
 
   clientePremium = true // TRUE aparecerá parágrafo
                         // FALSE não aparecerá
