@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'aula-faculdade';
   descricao1 = 'descrição do item 1'
-  descricao2 = 'descrição do item 2'
+
+  valor: {
+    descricao: string,
+    nome: string,
+    id: number
+  } = (
+    descricao: 'teste',
+    nome: 'nome',
+    id: 1
+  )
 }
