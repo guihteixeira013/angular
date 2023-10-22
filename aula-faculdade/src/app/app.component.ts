@@ -13,9 +13,13 @@ export class AppComponent {
     descricao: string,
     nome: string,
     id: number
-  } = (
+  } = {
     descricao: 'teste',
     nome: 'nome',
     id: 1
-  )
+  }
+
+  clientePremium = true // TRUE aparecerá parágrafo
+                        // FALSE não aparecerá
+
 }

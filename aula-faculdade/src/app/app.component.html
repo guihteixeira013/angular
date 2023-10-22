@@ -1,9 +1,20 @@
 <h1>Aplicação</h1>
 <app-header></app-header>
 
+<!-- Changing descricao1 value wid data bind TWO WAY -->
 <ul>
     <li>Item 1 - {{descricao1}}</li>
 </ul>
 
 <label for="">Nome: </label><br>
 <input [(ngModel)]="valor.nome" />
+
+<!-- IF clientePremim = true -->
+<div *ngIf="clientePremium; else naopremium">
+    <p>Você é um cliente Premium tem acesso a informações especiais.</p>
+</div>
+
+<!-- ELSE show #naopremium -->
+<ng-template #naopremium>
+    <p>Não é um cliente premium.</p>
+</ng-template>
