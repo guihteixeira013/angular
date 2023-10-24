@@ -24,6 +24,27 @@ export class AppComponent {
   }
 ]
 
+// testando novamente o que aprendi na aula passada
+  clientes = [
+    {
+      responsavel: 'antonio',
+      empresa: 'Zé da Manga ltda.',
+      cnpj: 758493759437
+    },{
+      responsavel: 'jubileu',
+      empresa: 'Jujuba fresca me.',
+      cnpj: 382747329422
+    },{
+      responsavel: 'MARCELO',
+      empresa: 'Maracuja du bom mei.',
+      cnpj: 84732974554
+    },{
+      responsavel: 'pamela',
+      empresa: 'pamelas ltda.',
+      cnpj: 75834594375
+    }
+  ]
+
   clientePremium = true // TRUE aparecerá parágrafo
                         // FALSE não aparecerá
 

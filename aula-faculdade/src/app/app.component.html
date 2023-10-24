@@ -16,3 +16,22 @@
 <ng-template #naopremium>
     <p>Não é um cliente premium.</p>
 </ng-template>
+
+<!-- testando ultimos conceitos aprendidos na última aula -->
+<h2>Meus clientes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>EMPRESA</th>
+            <th>CNPJ</th>
+            <th>RESPONSÁVEL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of clientes">
+            <td>{{i.empresa}}</td>
+            <td>{{i.cnpj}}</td>
+            <td>{{i.responsavel}}</td>
+        </tr>
+    </tbody>
+</table>
