@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-angular';
+
+  // testando *ngIF
+  isPremium: boolean = true;
+
+  // testando *ngFOR
+  valores = [
+    'gui',
+    'pam',
+    'angel',
+  ]
 }

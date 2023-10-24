@@ -1,3 +1,17 @@
 <app-hello [name]="'Guilherme e Pamela'"></app-hello>
 <app-counter></app-counter>
+
+<!-- testando *ngIF -->
+<div *ngIf='isPremium; else notPremium'>
+    <p>ITS PREMIUM !!</p>
+</div>
+    <!-- testando IF/ELSE -->
+<ng-template #notPremium>
+    is not premium!
+</ng-template>
+
+<!-- testando *ngFOR -->
+<ul *ngFor="let valor of valores">
+    <li>Nome: {{valor}}</li>
+</ul>
 <app-footer></app-footer>
