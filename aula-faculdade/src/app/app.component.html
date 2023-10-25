@@ -7,7 +7,7 @@
 </ul>
 
 
-<!-- IF clientePremim = true -->
+<!-- IF clientePremium = true -->
 <div *ngIf="clientePremium; else naopremium">
     <p>Você é um cliente Premium tem acesso a informações especiais.</p>
 </div>
@@ -17,11 +17,12 @@
     <p>Não é um cliente premium.</p>
 </ng-template>
 
-<!-- testando ultimos conceitos aprendidos na última aula -->
+<!-- tabela clientes (consulta array de objetos) -->
 <h2>Meus clientes</h2>
 <table>
     <thead>
         <tr>
+            <th>ID</th>
             <th>EMPRESA</th>
             <th>CNPJ</th>
             <th>RESPONSÁVEL</th>
@@ -29,9 +30,29 @@
     </thead>
     <tbody>
         <tr *ngFor="let i of clientes">
+            <td>{{i.id}}</td>
             <td>{{i.empresa}}</td>
             <td>{{i.cnpj}}</td>
             <td>{{i.responsavel}}</td>
         </tr>
     </tbody>
 </table>
+<br>
+<!-- adicionando mais clientes -->
+    <!--  empresa -->
+<label>Empresa: </label>
+<input [(ngModel)]="empresa" placeholder="nome da empresa" required>
+<br>    
+    <!-- cnpj -->
+<label>CNPJ: </label>
+<input [(ngModel)]="cnpj" maxlength="14" placeholder="cnpj da empresa" required>
+<br>
+    <!-- responsável -->
+<label>Responsável: </label>
+<input [(ngModel)]="responsavel" placeholder="responsável da empresa" required>
+
+
+<!-- botão adicionar -->
+    <!-- capturando algum (evento) -->
+<br>
+<button (click)="adicionar()">Adicionar cliente</button>
