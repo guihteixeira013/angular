@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
         template: ` 
         <h1>Imagem do Angular</h1>
         <!-- Data binding one way -->
-        <img [src]="imagem" [style.width]="width" />
+        <img [src]="imagem" [style]="{width: width, height: height}" />
 
         <!-- SE sucesso for true, aplica a classe .sucess -->
         <div class="alert" [class]="{correto: sucesso}">Alerta</div>
@@ -35,6 +35,7 @@ import { Component } from "@angular/core";
 export class BindingPageComponent {
     imagem = "https://angular.io/assets/images/logos/angular/shield-large.svg"
     width = "300px"
+    height = "180px"
 
     sucesso = false
 
