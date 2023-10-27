@@ -8,9 +8,11 @@ import { Component } from "@angular/core";
         <!-- Data binding one way -->
         <img [src]="imagem" [style]="{width: width, height: height}" />
 
+        <!-- DATA BIND DE CLASSE -->
         <!-- SE sucesso for true, aplica a classe .sucess -->
-        <div class="alert" [class]="{correto: sucesso}">Alerta</div>
-        <button (click)="enviarDados()">Enviar dados</button>
+        <div class="alert" [class]="{correto: sucesso}" [style]="{width: widthAlert, height: heightAlert}">Alerta</div>
+
+        <button (click)="enviarDados()" [style.width.px]="widthButton">Enviar dados</button>
         `,
         styles: [
             `.alert {
@@ -37,6 +39,14 @@ export class BindingPageComponent {
     width = "300px"
     height = "180px"
 
+    // estilo ALERT
+    widthAlert = "300px"
+    heightAlert = "150px"
+
+    // estilo BUTTON "enviar dados"
+    widthButton = 150
+
+    // variável p/ Data bind de class
     sucesso = false
 
     enviarDados() {
